@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+/*NULL*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.title {
+    color: hsl(47, 21%, 49%);
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hi {
+    background-color: rgb(104, 76, 6);
+    padding: 50px 0px;
+}
+
+.hi__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hi__body {
+    color: #fff;
+    padding-right: 30px;
+}
+
+.hi__image {
+    flex: 0 0 400px;
+}
+
+.hi__image img {
+    max-width: 100%;
+}
+
+
+.hi__title {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 60px;
+    padding-bottom: 38px;
+}
+
+.hi__list li {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    line-height: 22px;
+    padding-left: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.hi__list li::before {
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    height: 10px;
+    width: 10px;
+}
+
+.hi__list li:last-child {
+    margin: 0;
+}
+
+.drink {
+    padding: 50px 0px;
+}
+
+.drink p {
+    margin: 0px 20px;
+}
+
+.drink__title {
+    text-align: center;
+    margin: 20px 0px 60px 0px;
+    font-size: 60px;
+}
+
+.drink__body {
+    max-width: 990px;
+    margin: 0px auto;
+}
+
+.drink__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -22.5px;
+}
+
+.drink__column {
+    padding: 0px 22.5px;
+    flex: 0 1 50%;
+    display: flex;
+    margin: 0px 0px 35px 0px;
+}
+
+.drink__item {
+    box-shadow: 0px 0px 15px hsl(43, 67%, 25%);
+    border-radius: 5px;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drink__image {
+    padding: 12px;
+    text-align: center;
+}
+
+.drink__name {
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.drink__text {
+    font-size: 25px;
+    flex: 1 1 auto;
+}
+
+.drink__price {
+    display: block;
+    padding: 20px 0px 0px 0px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.waiter {
+    padding: 50px 0px;
+}
+
+.waiter__description {
+    font-size: 25px;
+    flex: 1 1 auto;
+}
+
+.waiter__name {
+    text-align: center;
+    font-size: 40px;
+    padding: 15px 0px;
+}
+
+.waiter p {
+    margin: 20px;
+}
+
+.waiter__title {
+    text-align: center;
+    margin: 20px 0px 60px 0px;
+    font-size: 60px;
+} 
+
+.waiter__image {
+    text-align: center;
+    padding: 15px;
+}
+
+.waiter__image img {
+    max-width: 100%;
+}
+
+.waiter__body {
+    max-width: 990px;
+    margin: 0px auto;
+}
+
+.waiter__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -22.5px;
+}
+
+.waiter__column {
+    padding: 0px 22.5px;
+    flex: 0 1 50%;
+    display: flex;
+    margin: 0px 0px 35px 0px;
+}
+
+.waiter__item {
+    box-shadow: 0px 0px 15px hsl(43, 67%, 25%);
+    border-radius: 5px;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: hsl(40, 25%, 48%);
+}
+.footer__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2.3px;
+}
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating, .star-rating2 {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 10px auto;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+
+  .star-rating2 input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 50px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+
+   .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 50px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #ff69b4;
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  }  
